@@ -9,7 +9,10 @@ import {Dog} from '../../../modules/dog.module';
 export class DogItemComponent implements OnInit {
 
   @Input() dogElement: Dog;
-  constructor() { }
+
+  constructor(dog: Dog) {
+    this.dogElement = dog;
+  }
 
   ngOnInit() {
   }
