@@ -1,7 +1,19 @@
-<mat-list>
-  <app-dog-item
-    style="cursor: pointer"
-    *ngFor="let dog of dogList"
-    [dogElement]="dog"
-  ></app-dog-item>
-</mat-list>
+  <!--<app-dog-item-->
+    <!--style="cursor: pointer"-->
+    <!--*ngFor="let dog of dogList">-->
+    <!--&lt;!&ndash;[dogElement]="dog"&ndash;&gt;-->
+  <!--</app-dog-item>-->
+<mat-accordion *ngFor="let dog of dogList">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{dog.name}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Breed: {{dog.breed}}</p>
+    <p>AKC: {{dog.akc_num}}</p>
+    <p>Date of Birth: {{dog.date_birth}}</p>
+    <p>Sire: {{dog.sire}}</p>
+    <p>Dam: {{dog.dam}}</p>
+  </mat-expansion-panel>
+</mat-accordion>
