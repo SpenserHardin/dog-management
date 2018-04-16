@@ -1,8 +1,8 @@
 import {TestBed, async} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
-import {DogListComponent} from './dogs/dog-list/dog-list.component';
-import {DogItemComponent} from './dogs/dog-list/dog-item/dog-item.component';
+import {DogListComponent} from './dogs1/dog-list/dog-list.component';
+import {DogItemComponent} from './dogs1/dog-list/dog-item/dog-item.component';
 import {MatListModule} from '@angular/material';
 import {BrowserModule} from '@angular/platform-browser';
 describe('AppComponent', () => {
